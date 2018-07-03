@@ -1,0 +1,252 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+<meta name="browsermode" content="application">
+<meta name="x5-page-mode" content="app">
+<meta name="msapplication-tap-highlight" content="no">
+<script>
+	(function() {
+		var IEvar = '9', IEnum = navigator.userAgent.toLowerCase();
+		if (IEnum.indexOf("msie") > -1) {
+			if (Number(IEnum.match(/msie ([\d.]+)/)[1]) < IEvar) {
+				location.href = '/updateBrowser.html';
+			}
+		} else {
+			if (window.localStorage && window.sessionStorage) {
+				try {
+					sessionStorage.setItem('TextLocalStorage', 'hello world');
+					sessionStorage.removeItem('TextLocalStorage');
+					localStorage.setItem('TextLocalStorage', 'hello world');
+					localStorage.removeItem('TextLocalStorage');
+				} catch (e) {
+					alert('您的浏览器太旧或者开启了隐私模式/无痕模式，无法浏览网页，请更换浏览器或使用常规模式，给您带来的不便，表示抱歉！')
+				}
+			} else {
+				location.href = '/updateBrowser.html';
+			}
+			;
+		}
+	})();
+	;
+	(function() {
+		if (location.href.search('CanPc') > -1) {
+			sessionStorage.setItem('CanPc', 1);
+		}
+		var u = navigator.userAgent;
+		if (!!u.match(/AppleWebKit.*Mobile.*/)
+				&& !sessionStorage.getItem('CanPc')) {
+			location.href = location.href.replace('www.', '').replace(
+					'http://', 'http://m.').replace(".html", '');
+		}
+	})();
+	(function() {
+		if ("undefined" === typeof (Promise)) {
+			document
+					.write('<script src="//cdn.bootcss.com/es6-promise/4.0.5/es6-promise.auto.min.js"><\/script>');
+		}
+		;
+		if ("undefined" === typeof (fetch)) {
+			document
+					.write('<script src="//cdn.bootcss.com/fetch/2.0.1/fetch.min.js"><\/script>');
+		}
+	})()
+</script>
+<link href="/static/public/normalize.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/static/public/need/layer.css">
+<script src="/static/public/layer.m.js"></script>
+<link href="http://ic5999.com/static/public/need/layer.css"
+	type="text/css" rel="styleSheet" id="layermcss">
+<script src="/static/public/xss.min.js"></script>
+<script src="/static/public/qrcode.min.js"></script>
+<link href="/static/css/app.91344b1dbee2b44b388c97cf4c55a634.css"
+	rel="stylesheet">
+<link type="image/x-icon" rel="shortcut icon"
+	href="//static.imagess-google.com/ico/ac500.ico">
+<title>爱创500万-登录</title>
+</head>
+<body>
+	<div id="app" class="login">
+		<div class="header head9">
+			<div data-v-a196decc="" id="HeaderTop" class="">
+				<div data-v-a196decc="" class="snav">
+					<div data-v-a196decc="" class="container">
+						<div data-v-a196decc="" class="snavAll">
+							<a data-v-a196decc="" href="/index" class=""> Hi，欢迎来到爱创500万！
+							</a>
+							<ins data-v-a196decc=""> | </ins>
+							<a data-v-a196decc="" class="betNavMore">全部彩票</a>
+						</div>
+						<ul data-v-a196decc="" class="snavInfo">
+							<li data-v-a196decc=""><a data-v-a196decc="" href="/login"
+								class="router-link-exact-active curr">亲，请登录</a><i
+								data-v-a196decc="" class="vertical"></i></li>
+							<li data-v-a196decc=""><a data-v-a196decc=""
+								href="/register" class="">用户注册</a></li>
+							<a data-v-a196decc="" class="serviceLink ServiceBtn"><i
+								data-v-a196decc="" class="iconfont"></i><span data-v-a196decc=""></span></a>
+						</ul>
+					</div>
+					<div data-v-097ebe4e="" data-v-a196decc="" class="cardBox"
+						style="display: none;">
+						<!---->
+					</div>
+				</div>
+			</div>
+			<!---->
+			<div class="nav">
+				<div class="container fix">
+					<h3>
+						<a href="/"><img
+							src="//imagess-google.com/ac500/logo/logo1.png?4d73"></a>
+					</h3>
+					<!---->
+					<ul class="navItem fix flr">
+						<li class="" id="navIndex"><a href="/index">首页</a></li>
+						<!---->
+						<li class="" id="navLottery"><a href="/lotteryHall">购彩大厅</a></li>
+						<!---->
+						<li class="" id="navLive"><a href="/livelist">UU直播</a></li>
+						<!---->
+						<li class="" id="navActivity"><a href="/activity">活动中心</a></li>
+						<!---->
+						<li class="" id="navMobile"><a href="/mobile">手机购彩</a></li>
+						<!---->
+						<li class="" id="navHelp"><a href="/helpCenter">帮助指南</a></li>
+						<!---->
+						<span></span>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-v-1ecec0b3="" class="container registerPage"
+			s="[object Object]">
+			<h3 data-v-1ecec0b3="" class="reg_tit">用户登录</h3>
+			<p data-v-1ecec0b3="" class="reg_small"></p>
+			<ul data-v-1ecec0b3="" class="submitContent mglr30 regMain">
+				<li data-v-1ecec0b3=""><span data-v-1ecec0b3="">账 号：</span><input
+					data-v-1ecec0b3="" tag="帐号" type="text" autocomplete="off"
+					class="userInput"> <em data-v-8a8cc866=""
+					data-v-1ecec0b3="" class="verifyWrong"><i data-v-8a8cc866=""></i>帐号不能为空</em></li>
+				<li data-v-1ecec0b3=""><span data-v-1ecec0b3="">密 码：</span> <input
+					data-v-1ecec0b3="" tag="密码" regmsg="密码应为6-16位字符" type="password"
+					autocomplete="off" class="userInput"> <em
+					data-v-8a8cc866="" data-v-1ecec0b3="" class="verifyWrong"><i
+						data-v-8a8cc866=""></i>密码不能为空</em></li>
+				<!---->
+				<li data-v-1ecec0b3="" style="margin-top: 23px;"><span
+					data-v-1ecec0b3=""></span> <a data-v-1ecec0b3=""
+					class="mainColorBtn submitBtnBig ClickShade">登 录</a> <a
+					data-v-1ecec0b3="" href="/forgetPwd?Q=ResetPwd" class="forgetPwd">忘记密码?</a></li>
+			</ul>
+		</div>
+		<div data-v-04c39bf8="" class="footer mgt40">
+			<div data-v-04c39bf8="" class="ftadCon">
+				<div data-v-04c39bf8="" class="container">
+					<ul data-v-04c39bf8="" class="ftad fix">
+						<li data-v-04c39bf8=""><a data-v-04c39bf8="" id="dafaCloud"
+							target="_blank" href="http://www.dafacloud.com"><p
+									data-v-04c39bf8="">
+									技术支持<i data-v-04c39bf8="">Technical support</i>
+								</p>
+								<div data-v-04c39bf8="" class="technicalSupport fix">
+									<div data-v-04c39bf8="" class="technicalSupport-box">
+										<img data-v-04c39bf8=""
+											src="http://imagess-google.com/test/../system/common/other/dafayun.png"
+											alt="大发云">
+										<p data-v-04c39bf8="">
+											大发云 <br data-v-04c39bf8=""> 彩票系统平台
+										</p>
+										<i data-v-04c39bf8=""></i>
+									</div>
+									<div data-v-04c39bf8="" class="technicalSupport-box uulive">
+										<img data-v-04c39bf8=""
+											src="http://imagess-google.com/test/../system/common/other/uulive.png"
+											alt="UU直播">
+										<p data-v-04c39bf8="">
+											UU直播 <br data-v-04c39bf8=""> 彩票直播平台
+										</p>
+										<i data-v-04c39bf8=""></i>
+									</div>
+								</div></a></li>
+						<li data-v-04c39bf8=""><p data-v-04c39bf8="">
+								服务体验<i data-v-04c39bf8="">Service experience</i>
+							</p>
+							<ul data-v-04c39bf8="" class="serviceExperience">
+								<li data-v-04c39bf8="">昨日充值平均时间
+									<p data-v-04c39bf8="" class="footBar">
+										<span data-v-04c39bf8="" style="width: 12.5%;"></span>
+									</p> <em data-v-04c39bf8="">0'15</em><i data-v-04c39bf8="">秒</i>
+								</li>
+								<li data-v-04c39bf8="">昨日提现平均时间
+									<p data-v-04c39bf8="" class="footBar">
+										<span data-v-04c39bf8="" style="width: 105%;"></span>
+									</p> <em data-v-04c39bf8="">2'06</em><i data-v-04c39bf8="">秒</i>
+								</li>
+							</ul></li>
+						<li data-v-04c39bf8=""><p data-v-04c39bf8="">
+								充值方式<i data-v-04c39bf8="">Recharge method</i>
+							</p>
+							<div data-v-04c39bf8="" class="rechargeMethod">
+								<i data-v-04c39bf8="" class="wechat"></i><i data-v-04c39bf8=""
+									class="alipay"></i><i data-v-04c39bf8="" class="cup"></i>
+							</div></li>
+					</ul>
+				</div>
+			</div>
+			<div data-v-04c39bf8="" class="container _about aboutText">
+				<p data-v-04c39bf8="" class="fix">
+					<a data-v-04c39bf8="">关于我们</a>|<a data-v-04c39bf8="">联系我们</a>|<a
+						data-v-04c39bf8="">商务合作</a>|<a data-v-04c39bf8="">法律声明</a>|<a
+						data-v-04c39bf8="">隐私声明</a>
+					<!---->
+				</p>
+				<p data-v-04c39bf8="" class="copyright">
+					Copyright © <span data-v-04c39bf8="" class="siteName">爱创500万</span>
+					Reserved | 18+
+				</p>
+			</div>
+		</div>
+		<!---->
+		<div data-v-fe86611c="" class="layermbox layermbox2 layermshow"
+			style="display: none;">
+			<div data-v-fe86611c="" class="laymshade"></div>
+			<div data-v-fe86611c="" class="layermmain">
+				<div data-v-fe86611c="" class="section">
+					<div data-v-fe86611c="" class="layermchild  layermanim">
+						<div data-v-fe86611c="" class="layermcont">
+							<i data-v-fe86611c=""></i> <i data-v-fe86611c=""
+								class="laymloadtwo"></i> <i data-v-fe86611c=""></i>
+							<div data-v-fe86611c=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript"
+		src="/static/js/manifest.f6e71e0af4f908ce5a88.js"></script>
+	<script type="text/javascript"
+		src="/static/js/vendor.7e3f3cbe010789995029.js"></script>
+	<script type="text/javascript"
+		src="/static/js/app.fe379fa1a9dc7783930b.js"></script>
+	<script type="text/javascript">
+		if (document.getElementById('load') && confirm('文件加载失败，是否刷新')) {
+			location.href = location.origin
+		}
+	</script>
+</body>
+</html>

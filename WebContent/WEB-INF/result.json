@@ -1,0 +1,120 @@
+{
+	"GetServerTimeMillisecond": {
+		"Code": 0,
+		"StrCode": "数据获取成功",
+		"DataCount": 0,
+		"BackUrl": null,
+		"BackData": null,
+		"Data": "1530400737218",
+		"CacheData": null,
+		"OpenType": 0,
+		"Style": null
+	},
+	"CheckUser": {
+		"Code": 1,
+		"StrCode": null,
+		"Exist": false
+	},
+	"GetCard": {
+		"Code": 0,
+		"StrCode": "数据获取成功",
+		"DataCount": 0,
+		"BackUrl": null,
+		"BackData": {
+			"UserName": "yd******9",
+			"NickName": "",
+			"UserPhoto": "6a177290f93a82c9.jpg",
+			"GroupTitle": "VIP4",
+			"Rank": "通判",
+			"Sex": "2",
+			"Award": "39580.75",
+			"LotteryType": "PK10,SSC,K3,6HC"
+		},
+		"Data": null,
+		"CacheData": null,
+		"OpenType": 0,
+		"Style": null
+	},
+	"GetInitData": {
+		"Code": 0,
+		"StrCode": "数据获取成功",
+		"DataCount": 0,
+		"BackUrl": null,
+		"BackData": {
+			"CloudUrl": "http://www.dafacloud.com"
+		},
+		"Data": null,
+		"CacheData": {
+			
+		},
+		"OpenType": 0,
+		"Style": null
+	},
+	"GetLotteryOpen": {
+		"Code": 1,
+		"StrCode": "数据获取成功",
+		"DataCount": 0,
+		"BackUrl": null,
+		"BackData": [
+			{
+				"IssueNo": "20180630082",
+				"LotteryOpen": "5,5,6",
+				"OpenTime": "2018/06/30 22:10:44"
+			}
+		],
+		"Data": null,
+		"CacheData": null,
+		"OpenType": 0,
+		"Style": null
+	},
+	"GetNewestBonusList": {
+		"Code": 1,
+		"StrCode": "数据获取成功",
+		"DataCount": 0,
+		"BackUrl": null,
+		"BackData": {
+			"NewestBonusList": [
+				{
+					"Id": 1239047992,
+					"UserId": 3965822,
+					"UserPhoto": "f9276d61473ac65d.jpg",
+					"UserName": "hy***y",
+					"Nickname": "",
+					"LotteryName": "大发六合彩",
+					"Bonus": "6.36"
+				},
+				{
+					"Id": 1239048099,
+					"UserId": 6114806,
+					"UserPhoto": "c5cb0b1aa816d7aa.jpg",
+					"UserName": "yj***0",
+					"Nickname": "",
+					"LotteryName": "大发PK10",
+					"Bonus": "9.7"
+				},
+				{
+					"Id": 1239046797,
+					"UserId": 3793145,
+					"UserPhoto": "1EF6FC3ACCBCD762.jpg",
+					"UserName": "xi***4",
+					"Nickname": "",
+					"LotteryName": "大发快3",
+					"Bonus": "1280.5"
+				},
+				{
+					"Id": 1239046443,
+					"UserId": 5506647,
+					"UserPhoto": "be83d242f47468f2.jpg",
+					"UserName": "my***6",
+					"Nickname": "",
+					"LotteryName": "UU快三",
+					"Bonus": "46.56"
+				}
+			]
+		},
+		"Data": null,
+		"CacheData": null,
+		"OpenType": 0,
+		"Style": null
+	}
+}
